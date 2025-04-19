@@ -28,18 +28,15 @@ ShortestPaths/
 │   │   │   │   ├── CLI.java
 │   │   │   ├── utils/
 │   │   │   │   ├── Edge.java
-│   │   │   │   ├──  ExcelFileHandeler.java
-            │   ├── 
+│   │   │   │   ├── ExcelFileHandler.java
+│   │   │   │   ├── HelperFunctions.java
+│   │   │   │   ├── MakeGraphs.java
+│   │   │   │   └── ShortestPathStatistics.java
 │   │   │   └── Main.java
 │   │
 │   └── test/java/
-│       └── com/shortestpaths/
-│           ├── algorithms/
-│           │   ├── DijkstraTest.java
-│           │   ├── BellmanFordTest.java
-│           │   └── FloydWarshallTest.java
-│           └── graph/
-│               └── GraphTest.java
+│       └── shortestpaths/
+│           └── ShortestPathsTest.java
 │
 ├── pom.xml             # Maven build configuration
 ├── .gitignore

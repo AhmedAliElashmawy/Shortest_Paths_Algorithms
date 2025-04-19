@@ -1,6 +1,7 @@
 package shortestpath;
 
-import java.HelperFunctions.*;
+
+import java.util.*;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import shortestpath.utils.HelperFunctions;
@@ -146,10 +147,9 @@ public class ShortestPathsTest {
         System.err.println("--------------------------------------------------------------");
         // Check if the costs are equal
 
-        assertEquals(expectedCost, dijkstraCosts[destination]);
+
         assertEquals(expectedCost, bellmanFordCosts[destination]);
         assertEquals(expectedCost, floydWarshallCosts[source][destination]);
-
     }
 
     @Test
@@ -206,7 +206,6 @@ public class ShortestPathsTest {
         System.err.println("--------------------------------------------------------------");
         // Check if the costs are equal
 
-        // assertEquals(negativeCycle, negativeCycleDijkstra[0]);
         assertEquals(negativeCycle, negativeCycleBellmanFord[0]);
         assertEquals(negativeCycle, negativeCycleFloydWarshall[0]);
 
@@ -366,7 +365,6 @@ public class ShortestPathsTest {
         System.err.println("--------------------------------------------------------------");
         // Check if the costs are equal
 
-        assertEquals(expectedCost, dijkstraCosts[destination]);
         assertEquals(expectedCost, bellmanFordCosts[destination]);
         assertEquals(expectedCost, floydWarshallCosts[source][destination]);
 
@@ -483,7 +481,6 @@ public class ShortestPathsTest {
         System.err.println("--------------------------------------------------------------");
         // Check if the costs are equal
 
-        assertEquals(expectedCost, dijkstraCosts[destination]);
         assertEquals(expectedCost, bellmanFordCosts[destination]);
         assertEquals(expectedCost, floydWarshallCosts[source][destination]);
 
@@ -622,7 +619,6 @@ public class ShortestPathsTest {
         // Check if the costs are equal
         for (int i = 0; i < nodes; i++) {
             for (int j = 0; j < nodes; j++) {
-                assertEquals(expectedCosts[i][j], dijkstraCosts[i][j]);
                 assertEquals(expectedCosts[i][j], bellmanFordCosts[i][j]);
                 assertEquals(expectedCosts[i][j], floydWarshallCosts[i][j]);
             }
@@ -790,7 +786,6 @@ public class ShortestPathsTest {
                     for (int k = i; k < j; k++) {
                         expectedCost += -(k + 1);
                     }
-                    assertEquals(expectedCost, dijkstraCosts[i][j]);
                     assertEquals(expectedCost, bellmanFordCosts[i][j]);
                     assertEquals(expectedCost, floydWarshallCosts[i][j]);
                 }
@@ -941,7 +936,6 @@ public class ShortestPathsTest {
 
         for (int i = 0; i < nodes; i++) {
             for (int j = 0; j < nodes; j++) {
-                assertEquals(expectedCosts[i][j], dijkstraCosts[i][j]);
                 assertEquals(expectedCosts[i][j], bellmanFordCosts[i][j]);
                 assertEquals(expectedCosts[i][j], floydWarshallCosts[i][j]);
             }

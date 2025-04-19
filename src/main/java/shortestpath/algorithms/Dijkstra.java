@@ -48,7 +48,7 @@ import shortestpath.utils.Edge;
                 int weight = edge.weight;
                 int newCost = currentCost + weight;
 
-                if (newCost < costs[v] && cost) {
+                if (newCost < costs[v]) {
                     costs[v] = newCost;
                     parents[v] = u;
                     pq.add(new int[]{v, newCost});

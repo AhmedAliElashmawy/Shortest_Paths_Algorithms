@@ -1,11 +1,11 @@
 shortestpath/algorithms/FloydWarshall.class
-shortestpath/algorithms/BellmanFord.class
 shortestpath/utils/ExcelFileHandler.class
+shortestpath/algorithms/BellmanFord.class
 shortestpath/utils/MakeGraphs.class
 shortestpath/utils/MakeGraphs$Edge.class
 shortestpath/cli/CLI.class
-shortestpath/algorithms/Dijkstra.class
-shortestpath/utils/ShortestPathStatistics.class
 shortestpath/Main.class
+shortestpath/utils/ShortestPathStatistics.class
+shortestpath/algorithms/Dijkstra.class
 shortestpath/utils/HelperFunctions.class
 shortestpath/utils/Edge.class

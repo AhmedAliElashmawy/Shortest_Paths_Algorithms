@@ -19,20 +19,20 @@ ShortestPaths/
 │
 ├── src/
 │   ├── main/java/
-│   │   ├── com/shortestpaths/
-│   │   │   ├── algorithms/
-│   │   │   │   ├── Dijkstra.java
-│   │   │   │   ├── BellmanFord.java
-│   │   │   │   └── FloydWarshall.java
-│   │   │   ├── cli/
-│   │   │   │   ├── CLI.java
-│   │   │   ├── utils/
-│   │   │   │   ├── Edge.java
-│   │   │   │   ├── ExcelFileHandler.java
-│   │   │   │   ├── HelperFunctions.java
-│   │   │   │   ├── MakeGraphs.java
-│   │   │   │   └── ShortestPathStatistics.java
-│   │   │   └── Main.java
+│   │   └── com/shortestpaths/
+│   │      ├── algorithms/
+│   │      │   ├── Dijkstra.java
+│   │      │   ├── BellmanFord.java
+│   │      │   └── FloydWarshall.java
+│   │      ├── cli/
+│   │      │   ├── CLI.java
+│   │      ├── utils/
+│   │      │   ├── Edge.java
+│   │      │   ├── ExcelFileHandler.java
+│   │      │   ├── HelperFunctions.java
+│   │      │   ├── MakeGraphs.java
+│   │      │   └── ShortestPathStatistics.java
+│   │      └── Main.java
 │   │
 │   └── test/java/
 │       └── shortestpaths/

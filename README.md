@@ -25,7 +25,7 @@ ShortestPaths/
 │   │      │   ├── BellmanFord.java
 │   │      │   └── FloydWarshall.java
 │   │      ├── cli/
-│   │      │   ├── CLI.java
+│   │      │   └── CLI.java
 │   │      ├── utils/
 │   │      │   ├── Edge.java
 │   │      │   ├── ExcelFileHandler.java

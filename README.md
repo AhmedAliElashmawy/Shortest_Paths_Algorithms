@@ -18,20 +18,32 @@ The system includes a command-line interface to interact with the graph, run sho
 ShortestPaths/
 │
 ├── src/
-│   ├── Graph.java              # Graph class and algorithm implementations
-│   ├── Main.java               # Command line interface
-│   └── ...
+│   ├── main/java/
+│   │   ├── com/shortestpaths/
+│   │   │   ├── algorithms/
+│   │   │   │   ├── Dijkstra.java
+│   │   │   │   ├── BellmanFord.java
+│   │   │   │   └── FloydWarshall.java
+│   │   │   ├── cli/
+│   │   │   │   ├── CLI.java
+│   │   │   ├── utils/
+│   │   │   │   ├── Edge.java
+│   │   │   │   ├──  ExcelFileHandeler.java
+            │   ├── 
+│   │   │   └── Main.java
+│   │
+│   └── test/java/
+│       └── com/shortestpaths/
+│           ├── algorithms/
+│           │   ├── DijkstraTest.java
+│           │   ├── BellmanFordTest.java
+│           │   └── FloydWarshallTest.java
+│           └── graph/
+│               └── GraphTest.java
 │
-├── test/
-│   └── GraphTest.java          # 15–20 JUnit tests
-│
-├── graphs/
-│   └── sample_input.txt        # Sample graph input files
-│
-├── report/
-│   └── AnalysisReport.pdf      # Time and space analysis and comparison
-│
-└── README.md                   # This file
+├── pom.xml             # Maven build configuration
+├── .gitignore
+└── README.md
 ```
 
 ---
